@@ -1,0 +1,17 @@
+Block level-   it is drawn as a block and stretches to fill the full width available to it.
+
+div
+section
+form
+nav
+
+_______________
+
+
+
+Inline- are drwan where are they defined and takes space that is ablolutely needed.
+
+span
+a
+string
+<a>
