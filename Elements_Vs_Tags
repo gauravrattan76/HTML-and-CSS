@@ -1,0 +1,49 @@
+difference between elements and tags-
+_________________________
+
+Element- Element is individual component of the html web page pr document.
+
+represent semantics and meaning.
+
+ex title elemennt represent the title of the document.
+
+
+____________________________
+
+Tags-
+
+It is the root of the html document which is used to specify that the document in html.
+
+head tags is used to contain all the information in the head element of the html
+
+____________________
+
+HTML tag is just opening or closing entity. For example:
+
+<p> and </p> are called HTML tags
+
+HTML element encompasses opening tag, closing tag, content (optional for content-less tags) Eg:
+
+<p>This is the content</p> : This complete thing is called a HTML element
+
+___________________
+
+
+HTML elements
+An element in HTML represents some kind of structure or semantics and generally consists of a start tag, content, and an end tag. The following is a paragraph element:
+
+<p>
+This is the content of the paragraph element.
+</p>
+HTML tags
+Tags are used to mark up the start and end of an HTML element.
+
+_________________________
+
+
+HTML attributes
+An attribute defines a property for an element, consists of an attribute/value pair, and appears within the element’s start tag. An element’s start tag may contain any number of space separated attribute/value pairs.
+
+The most popular misuse of the term “tag” is referring to alt attributes as “alt tags”. There is no such thing in HTML. Alt is an attribute, not a tag.
+
+<img src="foobar.gif" alt="A foo can be balanced on a bar by placing its fubar on the bar's foobar.">
