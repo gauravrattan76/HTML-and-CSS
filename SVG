@@ -1,0 +1,39 @@
+Scalable Vector Graphics
+_______________________________
+
+SVG is a language for describing 2D graphics in XML.
+
+Canvas draws 2D graphics, on the fly (with a JavaScript).
+
+SVG stands for Scalable Vector Graphics and it is a language for describing 2D-graphics and graphical applications in XML and the XML is then rendered by an SVG viewer.
+
+The HTML <svg> element is a container for SVG graphics.
+
+SVG has several methods for drawing paths, boxes, circles, text, and graphic images.
+
+________________
+
+
+Rectangle--
+
+  <svg id = "svgelem" height = "200" xmlns = "http://www.w3.org/2000/svg">
+         <rect id = "redrect" width = "300" height = "100" fill = "red" />
+      </svg>
+      
+      
+      _________________
+      
+      
+       <svg id = "svgelem" height = "200" xmlns = "http://www.w3.org/2000/svg">
+         <circle id = "redcircle" cx = "50" cy = "50" r = "50" fill = "red" />
+      </svg>
+      
+      
+      _________________
+      
+      
+      <svg id = "svgelem" height = "200" xmlns = "http://www.w3.org/2000/svg">
+         <line x1 = "0" y1 = "0" x2 = "200" y2 = "100" 
+            style = "stroke:red;stroke-width:2"/>
+      </svg>
+    
