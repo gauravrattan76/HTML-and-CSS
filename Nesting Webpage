@@ -1,0 +1,9 @@
+Use Iframe-
+
+I frame is used to show a html page with in html page.
+
+<html>
+<body>
+<h1>dummy data</h1>
+<iframe src="url" height= width =>
+
