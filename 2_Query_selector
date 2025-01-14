@@ -14,6 +14,22 @@ document.getElementById('div1').style.backgroundColor ="red"
 document.getElementById('div1').style.padding = '10px'
 
 ______________________________________________________________
+if we have -
+
+   <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+      </ul>
+
+
+const nodeLis= document.querySelectorAll('li')
+
+nodeLis.forEach((li) =>{li.style.color="red"})
+
+
+only use foreach, cant use map as its not array
+_____________________________________
 
 
 document.querySelector('#id') - will get the element with matching id
