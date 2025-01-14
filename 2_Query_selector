@@ -1,0 +1,27 @@
+we can use query selector to grab elements
+
+queryselector will select only the first mathcing elemment
+
+document.getElementById - returns the first matching element
+
+if not found returns null
+
+
+we can use style property to style the elements-
+
+document.getElementById('div1').style.backgroundColor ="red"
+
+document.getElementById('div1').style.padding = '10px'
+
+______________________________________________________________
+
+
+document.querySelector('#id') - will get the element with matching id
+
+document.querySelector('.className') - will get the element with matching className
+
+document.querySelector('h1') - will get the element with matching tag
+
+
+
+
