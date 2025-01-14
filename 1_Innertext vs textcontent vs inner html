@@ -1,0 +1,27 @@
+Div tag- 
+
+ <div id="div1" style={{'textAlign': 'right'}}>this is my first div<span style={{'display': 'none'}}>hello there</span></div>
+
+
+
+ Innner text - shows what visibkle in browser 
+
+ex.document.getElementById('div1').innerText
+'this is my first div'
+
+
+
+
+Text content whos everything whats written in the element
+
+document.getElementById('div1').textContent
+'this is my first divhello there'
+
+
+_______________________
+
+innerhtml -
+
+shows everything along with the nested html tags
+document.getElementById('div1').innerHTML
+'this is my first div<span style="display: none;">hello there</span>'
