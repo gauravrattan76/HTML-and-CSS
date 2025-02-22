@@ -1,0 +1,42 @@
+STANDARD HTML PAGE-
+_____________________________________
+
+
+The <link> element with the rel attribute in HTML is used to define relationships between the current document and external resources. The rel (relationship) attribute specifies the type of connection between them.
+
+STYLESHEET-
+
+<link rel="stylesheet" href="styles.css">
+
+Script-
+
+
+<script src="script.js" defer></script>
+
+
+Should have opening and closing tag
+
+
+No, the <script> tag cannot be self-closing (<script />) because JavaScript code can be placed inside the tag. Even if you are using an external script (src attribute), browsers do not recognize <script /> as valid.
+
+
+Standard html page-
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./styles.css" /></head>
+    </head>
+        <body>
+          
+            this is my html page!!
+            <div class="divOne">div one</div>
+            <script src="./script.js"></script>
+        </body>
+   
+</html>
+  
+
+
+
