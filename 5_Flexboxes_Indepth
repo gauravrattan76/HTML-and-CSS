@@ -1,0 +1,260 @@
+CSS Flex boxes-
+____________________
+
+Flexbox (Flexible Box Layout) is a powerful CSS layout module that provides an efficient way to align and distribute space among items in a container. It is particularly useful for designing responsive layouts without using floats or positioning.
+
+
+Combining media query with flex box is amazing and gives better responsiveness
+
+
+Most important thing In flex boxes -
+
+Justify content - aligns along with main axis
+
+Align items. - align items with the cross axis
+
+When ever we say that - flex-direction - row  main is x and cross is y
+
+When we say flex direction -  columns
+
+Main is y and cross is x
+
+
+Its one driectional
+
+
+
+Main axis -s x axis
+
+
+Cross axis is y axis
+
+
+1. Basic Concepts of Flexbox
+A flexbox layout consists of a flex container and flex items:
+* Flex Container: The parent element that holds the flex items.
+* Flex Items: The child elements inside the flex container.
+To enable flexbox, set the display property of the container to flex or inline-flex:
+css
+CopyEdit
+
+
+.container {
+  display: flex; /* Enables flexbox */
+}
+
+
+
+_________________________________
+
+
+Note-
+
+
+This is always fixed
+
+Justify content - aligns along with main axis
+
+
+Align items. - align items with the cross axis
+
+
+
+When ever we say that - flex-direction - row  main is x and cross is y
+
+
+When we say flex direction -  columns
+
+
+Main is y and cross is x
+
+
+
+
+
+
+2. Main and Cross Axis
+Flexbox operates along two axes:
+* Main Axis: Defined by the flex-direction property.
+* Cross Axis: Perpendicular to the main axis.
+flex-direction	Main Axis	Cross Axis
+row (default)	Left → Right	Top → Bottom
+row-reverse	Right → Left	Top → Bottom
+column	Top → Bottom	Left → Right
+column-reverse	Bottom → Top	Left → Right
+Example:
+css
+CopyEdit
+
+
+
+.container {
+  display: flex;
+  flex-direction: row; /* Items are arranged in a row */
+}
+
+_______________________
+
+3. Controlling Alignment and Spacing
+Justify Content (Align items along the main axis)
+css
+CopyEdit
+.container {
+  justify-content: center; /* Center items horizontally */
+}
+Value	Description
+flex-start	Items align at the start (default)
+flex-end	Items align at the end
+center	Items are centered
+space-between	Items are evenly spread, first and last at edges
+space-around	Equal space around items
+space-evenly	Equal space between and around items
+
+
+
+4. Align -items to align items along the cross axis
+
+Align Items (Align items along the cross axis)
+css
+CopyEdit
+.container {
+  align-items: center; /* Center items vertically */
+}
+Value	Description
+stretch	Items stretch to fill container (default)
+flex-start	Items align at the start
+flex-end	Items align at the end
+center	Items align at the center
+baseline	Items align at their text baselines
+
+
+_________________________-
+
+Flex-wrap - to make it responsive
+
+
+
+.parentDiv{
+height: 500px;
+border: 2px solid black;
+display: flex;
+gap: 20px;
+flex-wrap: wrap;
+}
+
+
+.childDiv{
+    /* flex: 1 1 120px; */
+  height: 100px;
+width: 180px;
+color: white;
+  background-color: green;
+}
+
+
+
+Now when we start shrinking we will see that the div. Start moving to the next line
+
+
+
+If we don’t specify the flex-wrap - it will keep shrinking without wrapping
+
+
+_______________
+
+
+We can use align-content to align the entire layout together
+
+
+Align item is for that row 
+
+
+Content is for the. Entire content
+
+
+_________________
+
+
+We also have row gap and column gap property too
+
+
+______________________
+
+
+Central align data inside the box
+
+.childDiv{
+    /* flex: 1 1 120px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  height: 100px;
+width: 180px;
+color: white;
+  background-color: green;
+}
+
+
+-_______________________
+
+
+Note - if flex-wrap is no wrap - keeps on shrinking and also expanding only till max width
+
+
+Flex-shrink - default valu is 1
+
+
+Is we say - 0 it won’t shrink only on making windows small
+
+
+What flex-shrink does is that it wont shrink it even if the window is closed, default value is 1
+
+
+_____________________
+
+Flex-grow default value is 0
+
+
+But if give 1 it takes the entire view port
+
+_____________
+
+
+We can use flex-grow with max width
+
+
+We can use flex-shrink with min-width
+
+
+_____________
+
+
+We can use media query if we want different behaviour
+
+
+Like shrink till a size and then wrap
+
+@media(max-width: 575px)
+{
+Apply wrap
+}
+
+
+
+
+____________
+
+Flex -basis
+
+
+Specify the original size before rapping
+
+
+
+We can comibine\\\
+
+
+Flex :  1 0 120px
+
+
+Grow shrink and size
