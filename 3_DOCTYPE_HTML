@@ -1,0 +1,43 @@
+DOCTYPE-
+__________________
+
+
+<!DOCTYPE html>
+
+
+Specify which version of html we are using
+
+The <!DOCTYPE html> declaration tells the browser which version of HTML to use and ensures the document is rendered correctly.
+
+
+Without <!DOCTYPE html>, browsers may switch to Quirks Mode, which can cause inconsistent styling and layout issues.
+* With <!DOCTYPE html> → The page renders in Standards Mode (correct, modern rendering).
+* Without it → The browser may use Quirks Mode, which mimics old browser behavior and can cause unexpected results.
+
+
+
+3. It Ensures Cross-Browser Compatibility
+Using <!DOCTYPE html> ensures your webpage behaves consistently across all modern browsers, preventing unpredictable rendering issues.
+
+
+
+<!DOCTYPE html>
+ <html lang="en"> 
+<head> <meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>My Web Page</title> 
+</head>
+ <body>
+ <h1>Welcome to My Website</h1>
+ </body>
+ </html>
+
+
+____________________
+
+
+Specifies the HTML version (HTML5)
+✅ Ensures correct browser rendering (Standards Mode)
+✅ Improves cross-browser compatibility
+
+
